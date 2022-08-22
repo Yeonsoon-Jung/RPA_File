@@ -1,0 +1,283 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Excel_다른이름으로_저장" this:Excel_다른이름으로_저장.in_파일이름="1234.xlsx" this:Excel_다른이름으로_저장.in_파일형식="Excel 97 - 2003 통합 문서 (*.xls)" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_파일이름" Type="InArgument(x:String)" />
+    <x:Property Name="in_파일형식" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>928,1713.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Excel_다른이름으로_저장_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="엑셀 다른이름으로 저장&#xA;작성일: 2021-01-13&#xA;작성자: 김세진 주임&#xA;주의사항 :  X" DisplayName="Excel_SaveAs" sap:VirtualizedContainerService.HintSize="475.2,1648.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Excel_SaveAs - 시작&quot;]" />
+    <Delay mva:VisualBasic.Settings="{x:Null}" DisplayName="Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1">
+      <TextExpression.Namespaces>
+        <sco:Collection x:TypeArguments="x:String">
+          <x:String>System.Activities</x:String>
+          <x:String>System.Activities.Statements</x:String>
+          <x:String>System.Activities.Expressions</x:String>
+          <x:String>System.Activities.Validation</x:String>
+          <x:String>System.Activities.XamlIntegration</x:String>
+          <x:String>Microsoft.VisualBasic.Activities</x:String>
+          <x:String>System</x:String>
+          <x:String>System.Collections.Generic</x:String>
+          <x:String>System.Data</x:String>
+          <x:String>System.Diagnostics</x:String>
+          <x:String>System.IO</x:String>
+          <x:String>System.Linq</x:String>
+          <x:String>System.Management.Automation</x:String>
+          <x:String>System.Net.Mail</x:String>
+          <x:String>System.Xml</x:String>
+          <x:String>System.Xml.Linq</x:String>
+          <x:String>UiPath.Library</x:String>
+          <x:String>System.Windows.Markup</x:String>
+        </sco:Collection>
+      </TextExpression.Namespaces>
+      <TextExpression.References>
+        <sco:Collection x:TypeArguments="AssemblyReference">
+          <AssemblyReference>System.Activities</AssemblyReference>
+          <AssemblyReference>mscorlib</AssemblyReference>
+          <AssemblyReference>System.Data</AssemblyReference>
+          <AssemblyReference>System</AssemblyReference>
+          <AssemblyReference>System.Core</AssemblyReference>
+          <AssemblyReference>System.Management.Automation</AssemblyReference>
+          <AssemblyReference>System.Xml</AssemblyReference>
+          <AssemblyReference>System.Xml.Linq</AssemblyReference>
+          <AssemblyReference>UiPath.Library</AssemblyReference>
+          <AssemblyReference>PresentationFramework</AssemblyReference>
+          <AssemblyReference>WindowsBase</AssemblyReference>
+          <AssemblyReference>PresentationCore</AssemblyReference>
+          <AssemblyReference>System.Xaml</AssemblyReference>
+        </sco:Collection>
+      </TextExpression.References>
+      <sap2010:WorkflowViewState.ViewStateManager>
+        <sap2010:ViewStateManager>
+          <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,22" Id="Delay_1" />
+        </sap2010:ViewStateManager>
+      </sap2010:WorkflowViewState.ViewStateManager>
+    </Delay>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey '다른이름으로저장'" sap:VirtualizedContainerService.HintSize="433.6,156" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f12" KeyModifiers="None" SpecialKey="True">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e8e60756-94ae-4d25-a5b7-957f190aaf43" InformativeScreenshot="59af5e8463ff7a4af00889483e764a7b" Selector="&lt;wnd app='excel.exe' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <Delay mva:VisualBasic.Settings="{x:Null}" DisplayName="Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1">
+      <TextExpression.Namespaces>
+        <sco:Collection x:TypeArguments="x:String">
+          <x:String>System.Activities</x:String>
+          <x:String>System.Activities.Statements</x:String>
+          <x:String>System.Activities.Expressions</x:String>
+          <x:String>System.Activities.Validation</x:String>
+          <x:String>System.Activities.XamlIntegration</x:String>
+          <x:String>Microsoft.VisualBasic.Activities</x:String>
+          <x:String>System</x:String>
+          <x:String>System.Collections.Generic</x:String>
+          <x:String>System.Data</x:String>
+          <x:String>System.Diagnostics</x:String>
+          <x:String>System.IO</x:String>
+          <x:String>System.Linq</x:String>
+          <x:String>System.Management.Automation</x:String>
+          <x:String>System.Net.Mail</x:String>
+          <x:String>System.Xml</x:String>
+          <x:String>System.Xml.Linq</x:String>
+          <x:String>UiPath.Library</x:String>
+          <x:String>System.Windows.Markup</x:String>
+        </sco:Collection>
+      </TextExpression.Namespaces>
+      <TextExpression.References>
+        <sco:Collection x:TypeArguments="AssemblyReference">
+          <AssemblyReference>System.Activities</AssemblyReference>
+          <AssemblyReference>mscorlib</AssemblyReference>
+          <AssemblyReference>System.Data</AssemblyReference>
+          <AssemblyReference>System</AssemblyReference>
+          <AssemblyReference>System.Core</AssemblyReference>
+          <AssemblyReference>System.Management.Automation</AssemblyReference>
+          <AssemblyReference>System.Xml</AssemblyReference>
+          <AssemblyReference>System.Xml.Linq</AssemblyReference>
+          <AssemblyReference>UiPath.Library</AssemblyReference>
+          <AssemblyReference>PresentationFramework</AssemblyReference>
+          <AssemblyReference>WindowsBase</AssemblyReference>
+          <AssemblyReference>PresentationCore</AssemblyReference>
+          <AssemblyReference>System.Xaml</AssemblyReference>
+        </sco:Collection>
+      </TextExpression.References>
+      <sap2010:WorkflowViewState.ViewStateManager>
+        <sap2010:ViewStateManager>
+          <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,22" Id="Delay_1" />
+        </sap2010:ViewStateManager>
+      </sap2010:WorkflowViewState.ViewStateManager>
+    </Delay>
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'EXCEL.EXE  다른 이름으로 저장'" sap:VirtualizedContainerService.HintSize="433.6,893.6" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="ead9ebf0afa314de909735a9d5836c25" Selector="&lt;wnd app='excel.exe' title='다른 이름으로 저장' /&gt;">
+      <ui:WindowScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,746.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into '파일 이름'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_파일이름]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7f287900-d3cf-4238-86f6-39eca7a4c2df" InformativeScreenshot="492243434bb13a69810d6f4eac28f5c7" Selector="&lt;wnd aaname='탐색 창' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item '파일 형식'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[in_파일형식]">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>Excel 통합 문서 (*.xlsx)</x:String>
+                  <x:String>Excel 매크로 사용 통합 문서 (*.xlsm)</x:String>
+                  <x:String>Excel 바이너리 통합 문서 (*.xlsb)</x:String>
+                  <x:String>Excel 97 - 2003 통합 문서 (*.xls)</x:String>
+                  <x:String>CSV UTF-8(쉼표로 분리)(*.csv)</x:String>
+                  <x:String>XML 데이터 (*.xml)</x:String>
+                  <x:String>웹 보관 파일 (*.mht;*.mhtml)</x:String>
+                  <x:String>웹 페이지 (*.htm;*.html)</x:String>
+                  <x:String>Excel 서식 파일 (*.xltx)</x:String>
+                  <x:String>Excel 매크로 사용 서식 파일 (*.xltm)</x:String>
+                  <x:String>Excel 97 - 2003 서식 파일 (*.xlt)</x:String>
+                  <x:String>텍스트 (탭으로 분리) (*.txt)</x:String>
+                  <x:String>유니코드 텍스트 (*.txt)</x:String>
+                  <x:String>XML 스프레드시트 2003 (*.xml)</x:String>
+                  <x:String>Microsoft Excel 5.0/95 통합 문서 (*.xls)</x:String>
+                  <x:String>CSV (쉼표로 분리) (*.csv)</x:String>
+                  <x:String>텍스트 (공백으로 분리) (*.prn)</x:String>
+                  <x:String>DIF (Data Interchange Format) (*.dif)</x:String>
+                  <x:String>SYLK(Symbolic Link) (*.slk)</x:String>
+                  <x:String>Excel 추가 기능(*.xlam)</x:String>
+                  <x:String>Excel 97-2003 추가 기능(*.xla)</x:String>
+                  <x:String>PDF (*.pdf)</x:String>
+                  <x:String>XPS 문서 (*.xps)</x:String>
+                  <x:String>Strict Open XML 스프레드시트 (*.xlsx)</x:String>
+                  <x:String>OpenDocument 스프레드시트 (*.ods)</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c4d26e8-4952-4d27-a019-addfb232b2a6" InformativeScreenshot="67f4c6ecea87740c373b0a80e75aa083" Selector="&lt;wnd aaname='탐색 창' /&gt;&lt;wnd aaname='파일 형식:' cls='ComboBox' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey '파일형식'" sap:VirtualizedContainerService.HintSize="358.4,156" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="77de3084-27b1-418c-b49e-21364aa00d36" InformativeScreenshot="67f4c6ecea87740c373b0a80e75aa083" Selector="&lt;wnd aaname='탐색 창' /&gt;&lt;wnd aaname='파일 형식:' cls='ComboBox' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click '저장'" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5842139d-edc0-441b-b58b-6574f2702670" InformativeScreenshot="f38ff97031432600a7a80e944f7e9d0c" Selector="&lt;wnd title='저장*' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:WindowScope.Body>
+    </ui:WindowScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Excel_SaveAs - 끝&quot;]" />
+  </Sequence>
+</Activity>
